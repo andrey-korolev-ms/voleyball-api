@@ -34,6 +34,6 @@ func handlerAPI(w http.ResponseWriter, r *http.Request) {
 func main() {
 
 	http.HandleFunc("/api", handlerAPI)
-	fmt.Println("Server started on port :8080")
+	fmt.Println("Сервер запущен на порту :8080")
 	http.ListenAndServe(":8080", nil)
 }
